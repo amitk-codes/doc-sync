@@ -17,6 +17,17 @@ app.use(bodyParser.json())
 app.use(cookieParser())
 app.use(express.json())
 
+const handlePreflight = (req, res, next) => {
+  if (req.method === 'OPTIONS') {
+    res.status(200).json({ body: 'OK' });
+  } else {
+    next();
+  }
+};
+
+app.use(handlePreflight)
+// for handling preflight requests
+
 
 loginSignupRoutes(app)
 app.use('/doc', docRoutes)
