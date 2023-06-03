@@ -1,1 +1,1 @@
-export const BackendURL = "https://doc-sync.vercel.app"
+export const BackendURL = "https://doc-sync.onrender.com"

@@ -21,17 +21,6 @@ app.use(express.json())
 loginSignupRoutes(app)
 app.use('/doc', docRoutes)
 
-const handlePreflight = (req, res, next) => {
-  if (req.method === 'OPTIONS') {
-    res.status(200).json({ body: 'OK' });
-  } else {
-    next();
-  }
-};
-
-app.use(handlePreflight)
-// for handling preflight requests
-
 app.use((err, req, res, next) => {
   console.error(err);
   res.status(500).json({ error: 'Internal Server Error' });
