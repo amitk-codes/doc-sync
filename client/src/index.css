@@ -1,0 +1,222 @@
+body{
+  background-color: #161616;
+  color: #bababa;
+}
+
+/* -------- truncate utility -------- */
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.truncate-lines {
+  display: -webkit-box;
+  -webkit-line-clamp: 6; 
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* -------------------------------- */
+
+
+
+/* ------------- login signup css --------------- */
+
+
+.login-signup-span{
+  cursor: pointer;
+}
+
+
+.login-signup-form{
+  width: 100%;
+  background-color: #00000060;
+}
+
+.login-signup-inputs{
+  background-color: #1c1c23 !important;
+  border: none !important;
+  outline: none !important;
+  color: white !important;
+  transition: all 0.1s !important;
+}
+
+.login-signup-inputs::placeholder{
+  color: rgba(255, 255, 255, 0.796) !important;
+}
+
+.login-signup-inputs:hover{
+  background-color: #26274a90 !important;
+}
+
+
+.login-signup-inputs:focus{
+  box-shadow: none !important;
+  background-color: #161616 !important;
+  box-shadow: 0 0 10px #1775e1 !important;
+}
+
+@media screen and (min-width: 993px) {
+  .login-signup-form{
+    width: 50% !important;
+  }
+}
+
+.login-signup-btn{
+  border: none;
+  outline: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 25px;
+  background-color: #6d28d9;
+  color: white;
+}
+
+.login-signup-btn:active{
+  background-color: #5c09e3;
+}
+
+/* ---------------------------------- */
+
+/* --------- header ------------ */
+
+nav{
+  padding: 1rem 0 !important;
+}
+
+.logo{
+  font-size: 1.5rem;
+  color: #f4f4f5;
+}
+
+.logo:hover{
+  color: #f4f4f5;
+}
+
+.logout-btn{
+  border:0.7px solid black !important;
+  padding: 8px 20px !important;
+  border-radius: 50px;
+  background-color: #1775e1;
+  color: white;
+}
+
+.logout-btn:hover{
+  color: white !important;
+}
+
+
+.logout-btn:active{
+  background-color: #1775e18b !important;
+}
+
+/* ------------------------ */
+
+
+/* ---------- doc section ------------- */
+
+.doc-div{
+  height: 15rem;
+  width: 14rem;
+  box-shadow: 0 0 1.5px black;
+  background-color: #333539;
+
+  padding-top: 1rem;
+  transition: all 0.2s;
+}
+
+.doc-heading{
+  padding: 1rem;
+  background-color: #484a4d;
+  color: white;
+  transition: all 0.2s;
+}
+.doc-div:hover{
+  cursor: pointer;
+
+  background-color: #0f1216;
+  .doc-heading{
+    background-color: #272a2e;
+  }
+}
+
+
+.add-btn-div{
+
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 3.5rem;
+  position:fixed !important;
+  bottom: 25px !important;
+  right: 25px !important;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+}
+
+
+/* -------------------------------- */
+
+
+/* ------------ doc page --------------- */
+
+.doc-page-div{
+  background-color: #1b222d;
+  min-height: 30rem;
+}
+
+
+@media screen and (min-width: 993px) {
+  .doc-page-div{
+    width: 50% !important;
+  }
+}
+
+.doc-page-input{
+  border: none;
+  outline: none;
+  background-color: #1b222d;
+
+}
+
+.doc-page-input:focus{
+  border: none;
+  outline: none;
+}
+
+.doc-page-txtarea-div{
+  min-height: 30rem !important;
+}
+
+.doc-page-txtarea{
+  height: 30rem !important;
+  width: 100% !important;
+  resize: none;
+  border: none;
+  outline: none;
+  background-color: #1b222d;
+
+}
+
+.doc-page-txtarea:focus{
+  border: none;
+  outline: none;
+}
+
+.dlt-doc-icon{
+  border-radius: 5px;
+  font-size: 2rem ;
+  cursor: pointer;
+}
+
+.dlt-doc-icon:hover{
+  background-color: rgba(255, 0, 0, 0.526);
+  color: white !important;
+
+}
+
+
+/* ------------------------ */
