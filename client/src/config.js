@@ -1,1 +1,1 @@
-export const BackendURL = "http://localhost:5000"
+export const BackendURL = "https://doc-sync.vercel.app"
