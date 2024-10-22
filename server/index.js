@@ -5,6 +5,7 @@ const bodyParser = require('body-parser')
 const cookieParser = require('cookie-parser')
 const cors = require('cors')
 const connection = require('./connection')
+const healthRoute = require('./routes/health')
 const loginSignupRoutes = require('./routes/login-signup')
 const docRoutes = require('./routes/docRoutes')
 const { Docs } = require('./models/doc')
@@ -17,7 +18,7 @@ app.use(bodyParser.json())
 app.use(cookieParser())
 app.use(express.json())
 
-
+app.use('/health', healthRoute)
 loginSignupRoutes(app)
 app.use('/doc', docRoutes)
 
